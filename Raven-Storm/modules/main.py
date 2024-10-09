@@ -19,7 +19,7 @@ try:
 	import readline  # noqa: F401
 except Exception:  # noqa: S110
 	pass
-
+	
 
 event = event()
 tools = tools()
@@ -82,21 +82,16 @@ class Main:
 		banner_middle_color = var.C_Violet
 		banner_bottom_color = var.C_Dark_Blue
 		banner_logo = ("""C_Bo-----------------------------------------------------------C_W
-C_FIRE (
- )\\ )                                 )                C_WC_Bov.""" + var.rsversion + """C_WC_FIRE
-(()/(    )   )      (              ( /(      (       )
- /(_))( /(  /((    ))\\  (      (   )\\()) (   )(     (
-(C_MID_C_FIRE))  )(_))(_))\\  /((_) )\\ )   )\\ (C_MID_C_FIRE))/  )\\ (()\\    )\\  'C_MID
-| _ \\C_FIRE((C_MID_C_FIRE)C_MID_ _C_FIRE)((C_MID_C_FIRE)(C_MID_C_FIRE))  C_MID_C_FIRE(C_MID_C_FIRE/(  ((C_MID_C_FIRE)C_MID| |C_FIRE  ((C_MID_C_FIRE) ((C_MID_C_FIRE) C_MID_C_FIRE((C_MID_C_FIRE))C_MID
-|   // _` |\\ V / / -_)| ' \\)) (_-<|  _|/ _ \\| '_|| '  \\C_FIRE()C_BOT
-|_|_\\\\__,_| \\_/  \\___||_||_|  /__/ \\__|\\___/|_|  |_|_|_|C_W
 
-C_BoStress-Testing-Toolkit by Taguar258 (c) | MIT 2020
-Based on the CLIF Framework by Taguar258 (c) | MIT 2020C_W
-
-BY USING THIS SOFTWARE, YOU MUST AGREE TO TAKE FULL RESPONSIBILITY
-FOR ANY DAMAGE CAUSED BY RAVEN-STORM.
-RAVEN-STORM SHOULD NOT SUGGEST PEOPLE TO PERFORM ILLEGAL ACTIVITIES.
+______ ___________  _____ ___________ _   __
+| ___ \  ___| ___ \/  ___|  ___| ___ \ | / /
+| |_/ / |__ | |_/ /\ `--.| |__ | |_/ / |/ / 
+| ___ \  __||    /  `--. \  __||    /|    \ 
+| |_/ / |___| |\ \ /\__/ / |___| |\ \| |\  \
+\____/\____/\_| \_|\____/\____/\_| \_\_| \_/
+                                            
+MADE BY L
+CONTACT : 6285737286718
 C_Bo-----------------------------------------------------------C_W""")
 		banner_logo = banner_logo.replace("C_W", var.C_None)
 		banner_logo = banner_logo.replace("C_Bo", var.C_Bold)
