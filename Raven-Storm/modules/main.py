@@ -82,14 +82,12 @@ class Main:
 		banner_middle_color = var.C_Violet
 		banner_bottom_color = var.C_Dark_Blue
 		banner_logo = ("""C_Bo-----------------------------------------------------------C_W
-
 ______ ___________  _____ ___________ _   __
 | ___ \  ___| ___ \/  ___|  ___| ___ \ | / /
 | |_/ / |__ | |_/ /\ `--.| |__ | |_/ / |/ / 
 | ___ \  __||    /  `--. \  __||    /|    \ 
 | |_/ / |___| |\ \ /\__/ / |___| |\ \| |\  \
-\____/\____/\_| \_|\____/\____/\_| \_\_| \_/
-                                            
+\____/\____/\_| \_|\____/\____/\_| \_\_| \_/                      
 MADE BY L
 CONTACT : 6285737286718
 C_Bo-----------------------------------------------------------C_W""")
@@ -339,15 +337,15 @@ C_Bo-----------------------------------------------------------C_W""")
 	def upgrade():
 		try:
 			chdir("/tmp")
-			system("sudo git clone https://github.com/Taguar258/Raven-Storm.git")
-			chdir("/tmp/Raven-Storm/")
+			system("sudo git clone https://github.com/Lokaxdev/Berserker")
+			chdir("/tmp/Berserker/")
 			system("sudo bash ./install_to_bin.sh")
-			print("[i] Deleting the temporary stored Raven-Storm...")
+			print("[i] Deleting the temporary stored Berserker...")
 			system("sudo rm -rf -i /tmp/Raven-Storm/")
 			var.stop()
 			quit()
 		except Exception:
-			print("Cound not upgrade Raven-Storm. (Make sure to use sudo)")
+			print("Cound not upgrade Berserker. (Make sure to use sudo)")
 
 	@event.command
 	def clear():
