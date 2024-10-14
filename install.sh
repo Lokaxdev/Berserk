@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "----------------------------------------"
-echo "[i] Installation"
+echo "[i] Installation by L"
 echo "[i] We are now checking what system you are running."
 if [ -f "/etc/debian_version" ]; then
         echo "[i] Detected Debian based Linux."
@@ -23,8 +23,8 @@ if [ -f "/etc/debian_version" ]; then
         echo "[i] We will now install psmisc..."
         sudo apt-get install -y psmisc > /dev/null 2>&1 || echo "[!] Could not install psmisc."
         echo "[i] We will now download BERSERK..."
-        sudo git clone https://github.com/Lokaxdev/Berserk > /dev/null 2>&1 || echo "[!] Could not download Raven-Storm."
-        cd Raven-Storm > /dev/null 2>&1
+        sudo git clone https://github.com/Lokaxdev/Berserker > /dev/null 2>&1 || echo "[!] Could not download Raven-Storm."
+        cd Berserker > /dev/null 2>&1
         echo "[i] We will now install requirements..."
         sudo pip3 install -r requirements.txt  > /dev/null 2>&1 || echo "[!] Could not install the requirements."
         echo "[i] We will now install Raven-Storm..."
@@ -74,12 +74,12 @@ elif [ -f "/etc/arch-release" ]; then  # FIXME
         echo "[i] We will now install psmisc..."
         sudo pacman --noconfirm -S psmisc > /dev/null 2>&1 || echo "[!] Could not install psmisc."
         echo "[i] We will now download Raven-Storm..."
-        sudo git clone https://github.com/Lokaxdev/Berserk > /dev/null 2>&1  || echo "[!] Could not download Raven-Storm."
-        cd Raven-Storm > /dev/null 2>&1
+        sudo git clone https://github.com/Lokaxdev/Berserker > /dev/null 2>&1  || echo "[!] Could not download Raven-Storm."
+        cd Berserker > /dev/null 2>&1
         echo "[i] We will now install requirements..."
         sudo pip3 install -r requirements.txt  > /dev/null 2>&1 || echo "[!] Could not install the requirements."
         echo "[i] We will now install BERSERK..."
-        sudo bash ./install_to_bin.sh || echo "[!] Could not install Raven-Storm."
+        sudo bash ./install_to_bin.sh || echo "[!] Could not install Berserker."
 elif [[ "$OSTYPE" == "win32" ]]; then
         echo "[!] Please run on wsl."
 else
