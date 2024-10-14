@@ -21,20 +21,20 @@ if [ -d "/usr/share/Raven-Storm" ] ; then
     sudo cp -ar ./Raven-Storm /usr/share/
     echo "[i] Installation sucessful."
     echo "[i] Making Raven-Storm executable..."
-    sudo mv /usr/share/Raven-Storm/main.py /usr/share/Raven-Storm/rst
-    sudo chmod +x /usr/share/Raven-Storm/rst
-    sudo ln -s /usr/share/Raven-Storm/rst /usr/bin/rst || echo "[i] Link already seems to exist."
+    sudo mv /usr/share/Raven-Storm/main.py /usr/share/Raven-Storm/berserk
+    sudo chmod +x /usr/share/Raven-Storm/berserk
+    sudo ln -s /usr/share/Raven-Storm/rst /usr/bin/berserk || echo "[i] Link already seems to exist."
 else
     sudo cp -ar ./Raven-Storm /usr/share/
     echo "[i] Installation sucessful."
     echo "[i] Making Raven-Storm executable..."
-    sudo mv /usr/share/Raven-Storm/main.py /usr/share/Raven-Storm/rst
-    sudo chmod +x /usr/share/Raven-Storm/rst
-    sudo ln -s /usr/share/Raven-Storm/rst /usr/bin/rst || echo "[i] Link already seems to exist."
+    sudo mv /usr/share/Raven-Storm/main.py /usr/share/Raven-Storm/berserk
+    sudo chmod +x /usr/share/Raven-Storm/berserk
+    sudo ln -s /usr/share/Raven-Storm/rst /usr/bin/berserk || echo "[i] Link already seems to exist."
 fi
 
 echo "[i] You can delete the Raven-Storm folder now."
 echo "----------------------------------------"
-echo "[i] Run 'sudo rst' to start Raven-Storm."
+echo "[i] Run 'sudo berserk' to start BERSERKER."
 echo "----------------------------------------"
 exit 0
